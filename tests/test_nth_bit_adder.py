@@ -7,7 +7,12 @@ class TestNthBitAdder(unittest.TestCase):
         # Test cases for binary addition
         # Test adding two binary numbers of the same length
         result = nth_bit_adder("1101", "1011")
-        self.assertEqual(result, [1, 1, 1, 0, 0], "Incorrect addition for equal-length binary numbers")
+       self.assertEqual(
+    result,
+    [1, 1, 1, 0, 0],
+    "Incorrect addition for equal-length binary numbers"
+)
+
 
         # Test adding two binary numbers of different lengths
         result = nth_bit_adder("110", "10101")
