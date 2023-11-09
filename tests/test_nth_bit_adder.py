@@ -5,7 +5,6 @@ from my_package.logic_gates.nth_bit_adder import nth_bit_adder
 class TestNthBitAdder(unittest.TestCase):
     def test_addition(self):
         # Test cases for binary addition
-
         # Test adding two binary numbers of the same length
         result = nth_bit_adder("1101", "1011")
         self.assertEqual(result, [1, 1, 1, 0, 0], "Incorrect addition for equal-length binary numbers")
